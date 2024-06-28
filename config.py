@@ -37,7 +37,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 
 
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI am a file store bot of @Chalochitra.")
 
 try:
     ADMINS=[7056014024]
@@ -47,7 +47,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\nI am a file store bot of @Chalochitra.")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>Please Click on 'JOIN CHANNEL' button and Join,\nThen click on 'TRY AGAIN' button to get your file</b>")
 
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>[TG:- @Chalochitra] {previouscaption}</b>")
 
